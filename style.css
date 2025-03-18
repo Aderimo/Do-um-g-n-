@@ -1,0 +1,181 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    padding-top: 50px;
+}
+
+#icerik {
+    width: 700px;
+    margin: auto;
+    padding: 20px;
+    background-color: #16213e;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    margin: 10px;
+    transition: 0.3s;
+    color: white;
+}
+
+button.yes {
+    background-color: green;
+}
+
+button.no {
+    background-color: red;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.ekran {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    width: 80%;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#karisik-kelime {
+    letter-spacing: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#sonuc {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#kutular {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.kutu {
+    width: 120px;
+    height: 120px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #0f3460;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.kutu:hover {
+    background-color: #533483;
+    transform: scale(1.1);
+}
+
+#sonuc-kutu {
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+body.body-final {
+    background-image: url('galaksi.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #000000; /* Tam siyah */
+    margin: 0;
+    padding: 0;
+}
+
+/* Final Ekranı Genel Arka Plan */
+body.body-final {
+    background: url("galaksi.png") no-repeat center center fixed;
+    background-size: cover;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mektup Konteyner */
+.mektup-container {
+    width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    font-family: 'Dancing Script', cursive; /* Yeni font burada tanımlandı */
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #333;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Scrollbar'ı gizler */
+.mektup-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Yazı metni içeriği */
+.mektup {
+    position: relative;
+    padding-bottom: 40px;
+}
+
+/* İmza kısmı */
+.mektup::after {
+    content: "Aderimo ❤️";
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 1.8rem;
+    color: #aa0000;
+}
+
+/* Yazı fontu (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.mektup-container {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #333;
+}
